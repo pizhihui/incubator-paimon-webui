@@ -18,14 +18,16 @@ under the License. */
 import { IconPlus, IconArticle } from "@douyinfe/semi-icons";
 import CatalogTree from "@pages/Metadata/LeftContent/CatalogTree";
 import {Divider} from "@douyinfe/semi-ui";
+import { useTranslation } from "react-i18next";
 
 const MetadataSidebar = () => {
+    const { t } = useTranslation()
     return(
         <div id={"d1"} style={{display: "flex", flexWrap: "wrap", width: "380px", height: "100%", flexFlow: "1",
             marginLeft: "30px"}}>
             <div id={"d2"} style={{width: "100%",display: "flex", alignItems: "center", height: "40px",color: "var(--semi-color-text-0)"}}>
                 <IconArticle style={{ marginLeft: "6px"}}/>
-                <span style={{marginLeft: "10px"}}>Catalog Directory</span>
+                <span style={{marginLeft: "10px"}}>{t('catalogDirector')}</span>
                 <IconPlus style={{marginLeft: "113px"}}/>
             </div>
             <Divider layout="horizontal" margin='50px'  style={{position: 'fixed', width: "360px", marginLeft: "-30px"}}/>

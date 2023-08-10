@@ -18,6 +18,9 @@ under the License. */
 import { BrowserRouter } from 'react-router-dom'
 import RenderRouter from '@src/router'
 import './App.less'
+
+import '@src/locales/i18n.ts'
+
 function App() {
     return(
         <BrowserRouter>

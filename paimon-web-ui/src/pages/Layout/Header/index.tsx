@@ -23,6 +23,7 @@ import paimonWhiteLogo from '@src/assets/logo/favicon_white.svg'
 import {useNavigate} from "react-router";
 import {useMemo, useState} from "react";
 import menuList from "@config/menu.tsx";
+import { Tooltip } from "@douyinfe/semi-ui";
 
 const { Header } = Layout
 
@@ -92,14 +93,19 @@ const HeaderRoot = ()=> {
                                     marginRight: '12px',
                                 }}
                             />
-                            <Button
-                                theme="borderless"
-                                icon={<IconLanguage size="extra-large" />}
-                                style={{
-                                    color: 'var(--semi-color-text-2)',
-                                    marginRight: '12px',
-                                }}
-                            />
+                            <Tooltip content={'切换到中文'}
+                                     position='topLeft'
+                            >
+                                <Button
+                                    theme="borderless"
+                                    icon={<IconLanguage size="extra-large" />}
+                                    style={{
+                                        color: 'var(--semi-color-text-2)',
+                                        marginRight: '12px',
+                                    }}
+                                    aria-label="切换到中文"
+                                >中文</Button>
+                            </Tooltip>
                             <Avatar
                                 color="orange"
                                 size="small"
