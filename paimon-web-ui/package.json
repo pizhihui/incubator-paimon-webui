@@ -15,7 +15,6 @@
     "@monaco-editor/react": "^4.5.1",
     "@semi-bot/semi-theme-doucreator": "^1.0.18",
     "@semi-bot/semi-theme-figma": "^0.1.6",
-    "@monaco-editor/react": "^4.5.1",
     "i18next": "^23.4.4",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.1",
@@ -24,7 +23,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1"
     "react-i18next": "^13.1.0",
     "react-icons": "^4.10.1"
   },
