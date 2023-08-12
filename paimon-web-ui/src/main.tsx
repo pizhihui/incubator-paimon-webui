@@ -20,8 +20,15 @@ import ReactDOM from 'react-dom/client'
 import App from './app/App.tsx'
 import './index.less'
 
+// import { LocaleProvider } from '@douyinfe/semi-ui'
+
+// import zh_CN from '@douyinfe/semi-ui/lib/es/locale/source/zh_CN'
+// import en_US from '@douyinfe/semi-ui/lib/es/locale/source/en_US';
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   // <React.StrictMode>
+  //   <LocaleProvider locale={en_US}>
     <App />
+    // </LocaleProvider>
   // </React.StrictMode>,
 )

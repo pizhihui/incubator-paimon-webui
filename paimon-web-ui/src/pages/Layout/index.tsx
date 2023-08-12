@@ -16,8 +16,8 @@ specific language governing permissions and limitations
 under the License. */
 
 import { Layout } from "@douyinfe/semi-ui";
-import Header from "./header";
 import { Outlet } from 'react-router-dom';
+import Header from "@pages/Layout/Header";
 
 const { Content } = Layout
 

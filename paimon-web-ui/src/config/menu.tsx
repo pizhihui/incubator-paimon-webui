@@ -15,11 +15,14 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License. */
 
+import i18n from '@src/locales/i18n.ts'
+
 export interface MenuItem {
     itemKey: string
     text: string
+    name: string
     icon?: React.ReactNode
-    path?: string
+    path: string
     items?: MenuItem[]
     component?: React.ComponentType<any>
 }
@@ -27,22 +30,34 @@ export interface MenuItem {
 const MENU_CONFIG: MenuItem[] = [
     {
         itemKey: '1',
-        text: 'Playground',
-        path: '/playground'
+        text: i18n.t('header.playground'),
+        name: 'playground',
+        path: '/playground',
+        items: [
+            {
+                itemKey: '11',
+                text: 'Playground1111',
+                name: 'playground1111',
+                path: '/playground/men1'
+            }
+        ]
     },
     {
         itemKey: '2',
         text: 'Metadata',
+        name: 'metadata',
         path: '/metadata'
     },
     {
         itemKey: '3',
         text: 'CDC Ingestion',
+        name: 'cdcingestion',
         path: '/system'
     },
     {
         itemKey: '4',
         text: 'System',
+        name: 'system',
         path: '/system'
     }
 ]

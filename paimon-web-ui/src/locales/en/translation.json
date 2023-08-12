@@ -1,4 +1,13 @@
 {
+  "header": {
+    "playground": "Playground",
+    "metadata": "Metadata",
+    "cdcingestion": "CDC Ingestion",
+    "system": "System"
+  },
+  "metadata": {
+    "catalog": ""
+  },
   "catalogDirector": "Welcome to react using react-i18next",
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
